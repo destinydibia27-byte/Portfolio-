@@ -595,9 +595,6 @@
           <div class="metric-label">Projects Shipped</div>
         </div>
         <div>
-          <div class="metric-num"><span id="c3">0</span>+</div>
-          <div class="metric-label">Technologies Used</div>
-        </div>
       </div>
     </div>
   </div>
@@ -621,10 +618,6 @@
         <p>I'm open to <strong>collaborations, freelance projects, and full-time roles</strong> where I can contribute meaningfully and grow alongside a talented team.</p>
       </div>
       <div class="about-aside reveal reveal-d2">
-        <div class="about-card">
-          <div class="about-card-num">1+</div>
-          <div class="about-card-label">Years of Experience</div>
-        </div>
         <div class="about-card">
           <div class="about-card-num">10+</div>
           <div class="about-card-label">Projects Completed</div>
@@ -666,16 +659,6 @@
           <li>Postman</li>
         </ul>
       </div>
-      <div class="skill-cell">
-        <div class="skill-cell-title">Soft Skills</div>
-        <ul class="skill-items">
-          <li>Problem Solving</li>
-          <li>Communication</li>
-          <li>Project Management</li>
-          <li>Attention to Detail</li>
-          <li>Fast Learning</li>
-        </ul>
-      </div>
     </div>
   </div>
 </section>
@@ -688,16 +671,16 @@
       <h2 class="section-title">Selected <em>Work</em></h2>
     </div>
     <div class="projects-stack reveal reveal-d1">
-      <a href="#" class="project-card">
+      <a href="https://github.com/destinydibia27-byte/Monad-copilot" target="_blank" rel="noopener" class="project-card">
         <div class="project-index">01</div>
         <div>
-          <div class="project-title">TaskMe</div>
-          <div class="project-summary">A task management application with role-based task assignment and submission workflows — designed to streamline team productivity and accountability.</div>
-          <div class="project-chips">
-            <span class="chip">React</span>
-            <span class="chip">Node.js</span>
-            <span class="chip">Task Management</span>
-          </div>
+          <div class="project-title">Monad Copilot</div>
+            <div class="project-summary">Real-time Monad ecosystem intelligence terminal. Tracks live GitHub commits across monad-labs and ecosystem projects, generates tweet drafts with Groq and manages content pipelines.</div>
+            <div class="project-chips">
+            <span class="chip">JavaScript</span>
+             <span class="chip">Groq</span>
+            <span class="chip">AI</span>
+        </div>
         </div>
         <div class="project-arrow">↗</div>
       </a>
@@ -900,7 +883,6 @@ const metricObs = new IntersectionObserver(entries => {
     if (e.isIntersecting) {
       counter(document.getElementById('c1'), 1);
       counter(document.getElementById('c2'), 10);
-      counter(document.getElementById('c3'), 8);
       metricObs.disconnect();
     }
   });
