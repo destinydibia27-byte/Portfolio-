@@ -595,6 +595,9 @@
           <div class="metric-label">Projects Shipped</div>
         </div>
         <div>
+          <div class="metric-num"><span id="c3">0</span>+</div>
+          <div class="metric-label">Technologies Used</div>
+        </div>
       </div>
     </div>
   </div>
@@ -618,6 +621,10 @@
         <p>I'm open to <strong>collaborations, freelance projects, and full-time roles</strong> where I can contribute meaningfully and grow alongside a talented team.</p>
       </div>
       <div class="about-aside reveal reveal-d2">
+        <div class="about-card">
+          <div class="about-card-num">1+</div>
+          <div class="about-card-label">Years of Experience</div>
+        </div>
         <div class="about-card">
           <div class="about-card-num">10+</div>
           <div class="about-card-label">Projects Completed</div>
@@ -659,6 +666,16 @@
           <li>Postman</li>
         </ul>
       </div>
+      <div class="skill-cell">
+        <div class="skill-cell-title">Soft Skills</div>
+        <ul class="skill-items">
+          <li>Problem Solving</li>
+          <li>Communication</li>
+          <li>Project Management</li>
+          <li>Attention to Detail</li>
+          <li>Fast Learning</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -671,16 +688,55 @@
       <h2 class="section-title">Selected <em>Work</em></h2>
     </div>
     <div class="projects-stack reveal reveal-d1">
-      <a href="https://github.com/destinydibia27-byte/Monad-copilot" target="_blank" rel="noopener" class="project-card">
+      <a href="https://tasq-henna.vercel.app" target="_blank" rel="noopener" class="project-card">
         <div class="project-index">01</div>
         <div>
-          <div class="project-title">Monad Copilot</div>
-            <div class="project-summary">Real-time Monad ecosystem intelligence terminal. Tracks live GitHub commits across monad-labs and ecosystem projects, generates tweet drafts with Groq and manages content pipelines.</div>
-            <div class="project-chips">
-            <span class="chip">JavaScript</span>
-             <span class="chip">Groq</span>
-            <span class="chip">AI</span>
+          <div class="project-title">Tasq</div>
+          <div class="project-summary">Role-aware remote team workspace platform. Lets teams switch between role-specific views, manage tasks, invites and permissions, with workspace file storage and real-time collaboration built on Supabase.</div>
+          <div class="project-chips">
+            <span class="chip">React</span>
+            <span class="chip">Supabase</span>
+            <span class="chip">Tailwind CSS</span>
+          </div>
         </div>
+        <div class="project-arrow">↗</div>
+      </a>
+      <a href="https://useconduit-app.vercel.app" target="_blank" rel="noopener" class="project-card">
+        <div class="project-index">02</div>
+        <div>
+          <div class="project-title">Conduit</div>
+          <div class="project-summary">B2B stablecoin settlement product enabling cross-border payments via Circle StableFX conversion. Currently live on Arc Testnet, with an internal ops dashboard tracking volume, merchants, and system health.</div>
+          <div class="project-chips">
+            <span class="chip">Next.js</span>
+            <span class="chip">Postgres</span>
+            <span class="chip">Stablecoins</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </a>
+      <a href="https://github.com/destinydibia27-byte/kickstake" target="_blank" rel="noopener" class="project-card">
+        <div class="project-index">03</div>
+        <div>
+          <div class="project-title">Kickstake</div>
+          <div class="project-summary">Self-custodial USDt wallet and World Cup prediction pool built for the Tether Developers Cup hackathon, with real on-chain settlement on Sepolia testnet.</div>
+          <div class="project-chips">
+            <span class="chip">Node.js</span>
+            <span class="chip">Tether WDK</span>
+            <span class="chip">Solidity</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </a>
+      <a href="https://github.com/destinydibia27-byte/Monad-copilot" target="_blank" rel="noopener" class="project-card">
+        <div class="project-index">04</div>
+        <div>
+          <div class="project-title">Monad Copilot</div>
+          <div class="project-summary">Real-time Monad ecosystem intelligence terminal. Tracks live GitHub commits across monad-labs and ecosystem projects, generates tweet drafts with Groq and manages content pipelines.</div>
+          <div class="project-chips">
+            <span class="chip">JavaScript</span>
+            <span class="chip">Groq</span>
+            <span class="chip">AI</span>
+          </div>
         </div>
         <div class="project-arrow">↗</div>
       </a>
@@ -883,6 +939,7 @@ const metricObs = new IntersectionObserver(entries => {
     if (e.isIntersecting) {
       counter(document.getElementById('c1'), 1);
       counter(document.getElementById('c2'), 10);
+      counter(document.getElementById('c3'), 8);
       metricObs.disconnect();
     }
   });
